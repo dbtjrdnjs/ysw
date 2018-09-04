@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e6cbb3"
+            android:orientation="horizontal">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/city"
+                    android:gravity="right"
+                    android:background="#EAEAEA"
+                    android:text="기간 설정" />
+
+                <TextView
+                    android:id="@+id/baobab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period"
+                    android:background="#EAEAEA"
+                    android:text="바오밥 식당" />
+
+                <RelativeLayout
+                    tools:context="com.example.hana.myapplication.layout4"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+
+                    <Button
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textAllCaps="false"
+                        android:text=""
+                        android:id="@+id/btn_show"/>
+
+                    <TextView
+                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="선택한 날짜"
+                        android:id="@+id/tv_selected_date"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_below="@id/btn_show"/>
+
+                    <TextView
+                        android:id="@+id/space"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/btn_show"
+                        android:background="#EAEAEA"
+                        android:text=" ~ " />
+
+                    <Button
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_toRightOf="@id/space"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textAllCaps="false"
+                        android:id="@+id/btn_show2"/>
+
+                    <TextView
+                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="선택한 날짜"
+                        android:layout_toRightOf="@id/tv_selected_date"
+                        android:id="@+id/tv_selected_date2"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_below="@id/btn_show2"/>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="#111" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/graph"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:background="#111"
+                android:layout_margin="20dp"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_below="@id/graph"
+                android:background="#111" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/terms_btn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/license"
+                android:gravity="center"
+                android:layout_marginRight="30dp"
+                android:text="약관 보기" />
+
+            <Button
+                android:id="@+id/qna_btn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/terms_btn"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="문의 하기" />
+
+
+            <TextView
+                android:id="@+id/commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qna_btn"
+                android:gravity="center"
+                android:background="#EAEAEA"
+                android:text="수수료 : 3.8%" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commission"
+                android:gravity="center"
+                android:background="#EAEAEA"
+                android:text="프리미엄, VIP 사장님 혜택보기" />
+
+            <TextView
+                android:id="@+id/ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/level"
+                android:gravity="center"
+                android:background="#EAEAEA"
+                android:text="광고 하기" />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

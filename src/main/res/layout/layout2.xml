@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mainimg"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#EAEAEA"
+                android:gravity="center"
+                android:text="식당 메인 이미지(총 3장)" />
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="30dp"
+                android:text="+" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="#111" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/menuup"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#EAEAEA"
+            android:gravity="center"
+            android:text="메뉴 업로드" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/R1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/mainmenuimg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#EAEAEA"
+                    android:gravity="center"
+                    android:text="식당 메인 이미지(1장)" />
+
+                <Button
+                    android:id="@+id/menu_upload_btn1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/mainmenuimg1"
+                    android:text="+" />
+
+                <EditText
+                    android:id="@+id/menu_name1"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/mainmenuimg1"
+                    android:hint="메뉴명"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_price1"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_name1"
+                    android:hint="가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_discount1"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_price1"
+                    android:hint="할인 가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/R2">
+
+                <TextView
+                    android:id="@+id/mainmenuimg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#EAEAEA"
+                    android:gravity="center"
+                    android:text="식당 메인 이미지(1장)" />
+
+                <Button
+                    android:id="@+id/menu_upload_btn2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/mainmenuimg2"
+                    android:text="+" />
+
+                <EditText
+                    android:id="@+id/menu_name2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/mainmenuimg2"
+                    android:hint="메뉴명"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_price2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_name2"
+                    android:hint="가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_discount2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_price2"
+                    android:hint="할인 가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/R3">
+
+                <TextView
+                    android:id="@+id/mainmenuimg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#EAEAEA"
+                    android:gravity="center"
+                    android:text="식당 메인 이미지(1장)" />
+
+                <Button
+                    android:id="@+id/menu_upload_btn3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/mainmenuimg3"
+                    android:text="+" />
+
+                <EditText
+                    android:id="@+id/menu_name3"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/mainmenuimg3"
+                    android:hint="메뉴명"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_price3"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_name3"
+                    android:hint="가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_discount3"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_price3"
+                    android:hint="할인 가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/R4">
+
+                <TextView
+                    android:id="@+id/mainmenuimg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#EAEAEA"
+                    android:gravity="center"
+                    android:text="식당 메인 이미지(1장)" />
+
+                <Button
+                    android:id="@+id/menu_upload_btn4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/mainmenuimg4"
+                    android:text="+" />
+
+                <EditText
+                    android:id="@+id/menu_name4"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/mainmenuimg4"
+                    android:hint="메뉴명"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_price4"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_name4"
+                    android:hint="가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_discount4"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_price4"
+                    android:hint="할인 가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/R5">
+
+                <TextView
+                    android:id="@+id/mainmenuimg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#EAEAEA"
+                    android:gravity="center"
+                    android:text="식당 메인 이미지(1장)" />
+
+                <Button
+                    android:id="@+id/menu_upload_btn5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/mainmenuimg5"
+                    android:text="+" />
+
+                <EditText
+                    android:id="@+id/menu_name5"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/mainmenuimg5"
+                    android:hint="메뉴명"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_price5"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_name5"
+                    android:hint="가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_discount5"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_price5"
+                    android:hint="할인 가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/R6">
+
+                <TextView
+                    android:id="@+id/mainmenuimg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#EAEAEA"
+                    android:gravity="center"
+                    android:text="식당 메인 이미지(1장)" />
+
+                <Button
+                    android:id="@+id/menu_upload_btn6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/mainmenuimg6"
+                    android:text="+" />
+
+                <EditText
+                    android:id="@+id/menu_name6"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/mainmenuimg6"
+                    android:hint="메뉴명"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_price6"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_name6"
+                    android:hint="가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/menu_discount6"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/menu_price6"
+                    android:hint="할인 가격"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+-->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#111" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="#EAEAEA"
+                    android:gravity="center"
+                    android:text="사업자 등록증 업로드" />
+
+                <Button
+                    android:id="@+id/license_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="20dp"
+                    android:text="+"
+                    android:layout_toRightOf="@id/license" />
+            </RelativeLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/license"
+                    android:gravity="center"
+                    android:text="제출하기" />
+
+            </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

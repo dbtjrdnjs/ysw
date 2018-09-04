@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e6cbb3"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/city"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:entries="@array/city" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/city"
+                    android:background="#EAEAEA"
+                    android:text="주소" />
+
+                <EditText
+                    android:id="@+id/detail_addr"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/address"
+                    android:hint="상세주소"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/bussiness_name"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:hint="상호명"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/bussiness_tel"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/bussiness_name"
+                    android:hint="전화번호"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/bussiness_table"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/bussiness_tel"
+                    android:hint="테이블 수"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/bussiness_parking"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/bussiness_table"
+                    android:hint="주차장 유/무"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="#111" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city"
+                android:layout_margin="15dp"
+                android:background="#EAEAEA"
+                android:text="업체 종목" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/kor_food"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:background="#EAEAEA"
+                android:gravity="center"
+                android:text="한식" />
+
+            <CheckBox
+                android:id="@+id/kor_food_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/kor_food"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/chi_jp_food"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/kor_food"
+                android:background="#EAEAEA"
+                android:gravity="center"
+                android:text="중식/일식" />
+
+            <CheckBox
+                android:id="@+id/chi_jp_food_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/kor_food_cb"
+                android:layout_toRightOf="@id/chi_jp_food"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/meat"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/chi_jp_food"
+                android:background="#EAEAEA"
+                android:gravity="center"
+                android:text="고기" />
+
+            <CheckBox
+                android:id="@+id/meat_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/chi_jp_food_cb"
+                android:layout_toRightOf="@id/meat"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/cafe"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/meat"
+                android:background="#EAEAEA"
+                android:gravity="center"
+                android:text="카페" />
+
+            <CheckBox
+                android:id="@+id/cafe_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/meat_cb"
+                android:layout_toRightOf="@id/cafe"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/hof"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/cafe"
+                android:background="#EAEAEA"
+                android:gravity="center"
+                android:text="호프" />
+
+            <CheckBox
+                android:id="@+id/hof_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/cafe"
+                android:layout_toRightOf="@id/hof"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/chicken"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/hof"
+                android:background="#EAEAEA"
+                android:gravity="center"
+                android:text="치킨" />
+
+            <CheckBox
+                android:id="@+id/chicken_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/hof_cb"
+                android:layout_toRightOf="@id/chicken"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/sashimi"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/chicken"
+                android:background="#EAEAEA"
+                android:gravity="center"
+                android:text="횟집" />
+
+            <CheckBox
+                android:id="@+id/sashimi_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/chicken_cb"
+                android:layout_toRightOf="@id/sashimi"
+                android:checked="false" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="#111" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/img_upload"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:background="#EAEAEA"
+                android:gravity="center"
+                android:text="이미지 업로드" />
+
+            <Button
+                android:id="@+id/img_btn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/img_upload"
+                android:layout_margin="15dp"
+                android:text="next>" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

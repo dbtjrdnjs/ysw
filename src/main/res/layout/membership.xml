@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#EAEAEA"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/email"
+            android:gravity="center"
+            android:background="#EAEAEA"
+            android:text="비밀번호" />
+
+        <TextView
+            android:id="@+id/passwordcheck"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/password"
+            android:gravity="center"
+            android:background="#EAEAEA"
+            android:text="비밀번호 확인" />
+
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/passwordcheck"
+            android:gravity="center"
+            android:background="#EAEAEA"
+            android:text="연락처" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tel"
+            android:gravity="center"
+            android:background="#EAEAEA"
+            android:text="주소" />
+
+        <TextView
+            android:id="@+id/simple"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/address"
+            android:gravity="center"
+            android:background="#EAEAEA"
+            android:text="위치(간단히)" />
+
+        <EditText
+            android:id="@+id/email_text"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/email" />
+
+        <EditText
+            android:id="@+id/password_text"
+            android:layout_below="@id/email_text"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:layout_toRightOf="@id/password" />
+
+        <EditText
+            android:id="@+id/passwordcheck_text"
+            android:layout_below="@id/password_text"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:layout_toRightOf="@id/passwordcheck" />
+
+        <EditText
+            android:id="@+id/tel_text"
+            android:layout_below="@id/passwordcheck_text"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/tel" />
+
+        <EditText
+            android:id="@+id/address_text"
+            android:layout_below="@id/tel_text"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/address" />
+
+        <EditText
+            android:id="@+id/simple_text"
+            android:layout_below="@id/address_text"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/simple" />
+
+    </RelativeLayout>
+
+</ScrollView>
